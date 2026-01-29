@@ -1,175 +1,171 @@
-/* RESET BÁSICO */
-body {
+/* RESET */
+* {
   margin: 0;
-  font-family: 'Open Sans', sans-serif;
-  background-color: #ffffff;
-  color: #222;
-  line-height: 1.7;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* TOP DISCLOSURE BAR */
-.top-bar {
-  background: #eef1f5;
-  padding: 12px 20px;
-  font-size: 14px;
+/* BASE */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f6f8fb;
+  color: #222;
+  line-height: 1.75;
+}
+
+/* DISCLOSURE */
+.disclosure {
+  background: #eef2f6;
+  font-size: 13px;
   text-align: center;
-  color: #333;
-  border-bottom: 1px solid #dcdfe5;
+  padding: 10px 15px;
+  color: #555;
 }
 
 /* CONTAINER */
 .container {
-  max-width: 820px;
+  max-width: 860px;
   margin: 40px auto;
-  padding: 0 20px;
-}
-
-/* NOTICE / DISCLAIMER BOX */
-.notice-box {
-  background: #fff6e5;
-  border: 1px solid #f0d9a7;
-  padding: 20px;
-  border-radius: 8px;
-  margin-bottom: 30px;
-  font-size: 15px;
-  color: #333;
-}
-
-.notice-box p {
-  margin: 0 0 10px 0;
+  background: #ffffff;
+  padding: 35px 30px;
+  border-radius: 6px;
 }
 
 /* HEADINGS */
 h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: 38px;
+  font-size: 30px;
   margin-bottom: 15px;
 }
 
-h2 {
-  font-size: 20px;
-  font-weight: 400;
+.subtitle {
+  font-size: 17px;
+  color: #555;
   margin-bottom: 30px;
-  color: #444;
 }
 
-h3 {
-  margin-top: 40px;
-  font-size: 24px;
-}
-
-/* TEXT */
-p {
-  margin-bottom: 20px;
-}
-
-ul {
+/* HERO */
+.hero {
+  text-align: center;
   margin-bottom: 30px;
-  padding-left: 20px;
 }
 
-li {
-  margin-bottom: 10px;
-}
-
-/* IMAGES */
-.content-image {
+.hero img {
   width: 100%;
-  max-width: 760px;
-  margin: 25px auto;
-  display: block;
+  max-width: 540px;
   border-radius: 6px;
 }
 
-/* SECTION HIGHLIGHT */
-.section-highlight {
-  background: #f8f9fb;
-  padding: 30px 25px;
-  border-radius: 8px;
-  margin: 40px 0;
-  border: 1px solid #e4e7ee;
+/* CONTENT */
+.content p {
+  margin-bottom: 18px;
+  font-size: 16px;
+}
+
+.empathy {
+  font-size: 17px;
+  font-style: italic;
+  color: #333;
+}
+
+/* INFO BOX */
+.info-box {
+  background: #f0f6ff;
+  border-left: 4px solid #0b5ed7;
+  padding: 18px 20px;
+  margin: 30px 0;
+  border-radius: 4px;
+}
+
+/* SUBHEADINGS */
+.content h2 {
+  margin: 35px 0 15px;
+  font-size: 22px;
+}
+
+/* LIST */
+ul {
+  margin-left: 20px;
+  margin-bottom: 25px;
+}
+
+ul li {
+  margin-bottom: 8px;
 }
 
 /* CTA */
-.cta {
-  text-align: center;
+.cta-box {
+  background: #f4f8ff;
+  border: 1px solid #d6e4ff;
+  padding: 30px;
   margin: 40px 0;
-}
-
-.cta a {
-  background: #0b4aa2;
-  color: #fff;
-  padding: 16px 32px;
-  text-decoration: none;
-  font-size: 18px;
+  text-align: center;
   border-radius: 6px;
+}
+
+.cta-intro {
+  font-size: 16px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.cta-button {
   display: inline-block;
-  box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+  background: #0b5ed7;
+  color: #ffffff;
+  padding: 15px 28px;
+  font-size: 18px;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background 0.3s ease;
 }
 
-.cta a:hover {
-  background: #083a80;
+.cta-button:hover {
+  background: #0949aa;
 }
 
-.cta-subtext {
-  font-size: 14px;
+.cta-note {
+  font-size: 13px;
   color: #555;
-  margin-top: 10px;
+  margin-top: 12px;
 }
 
-/* CTA FINAL */
-.cta.final a {
-  font-size: 20px;
-  padding: 18px 36px;
-}
-
-/* DIVIDER */
-.divider {
-  border: none;
-  border-top: 1px solid #e1e4ea;
-  margin: 50px 0;
+/* FAQ */
+.faq p {
+  margin-bottom: 15px;
+  font-size: 15px;
 }
 
 /* FOOTER */
-footer {
-  background: #f7f7f7;
-  padding: 35px 20px;
-  font-size: 14px;
+.footer {
+  margin-top: 45px;
   text-align: center;
-  color: #444;
+  font-size: 13px;
+  color: #666;
 }
 
-footer p {
-  margin-bottom: 15px;
-}
-
-.footer-links a {
-  color: #444;
+.footer a {
+  color: #0b5ed7;
   text-decoration: none;
-  margin: 0 6px;
+  margin: 0 5px;
 }
 
-.footer-links a:hover {
+.footer a:hover {
   text-decoration: underline;
 }
 
-/* MOBILE */
+/* RESPONSIVE */
 @media (max-width: 600px) {
   h1 {
-    font-size: 30px;
+    font-size: 24px;
   }
 
-  h2 {
-    font-size: 18px;
+  .container {
+    padding: 25px 18px;
   }
 
-  .cta a {
+  .cta-button {
     width: 100%;
-    box-sizing: border-box;
-  }
-
-  .notice-box {
-    font-size: 14px;
   }
 }
+
 
